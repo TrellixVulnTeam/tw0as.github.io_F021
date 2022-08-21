@@ -1,0 +1,218 @@
+$colors: (
+  skyblue: rgba(191, 203, 232, 1),
+  beige: rgba(232, 220, 191, .4),
+  brown: rgba(232, 220, 191, 1),
+  green: rgba(36, 87, 75, 1),
+  black: rgba(0, 0, 0, .8),
+);
+
+/* MAIN GENERAL */
+.main__title {
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  @mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+  }
+  
+  #hometitle {
+    margin: 0%;
+  }
+
+.main__section {
+  border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: map-get($colors, beige);
+}
+
+  /* MAIN ELEMENTS */
+  .main__elements {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main__elements ul li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: map-get($colors, black);
+    border-radius: 100px;
+    margin: 20px;
+    -webkit-transition: -webkit-transform 1s;
+  }
+
+  .main__elements ul li:hover {
+    -webkit-transform: scale(1.2) rotate(360deg) translateZ(0);
+    background-color: map-get($colors, green)
+  }
+
+  .main__elements--sub {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: map-get($colors, beige);
+  }
+  
+  /* MAIN WEAPONS */
+  .main__weapons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main__weapons ul li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: map-get($colors, black);
+    border-radius: 100px;
+    margin: 20px;
+    -webkit-transition: -webkit-transform 1s;
+  }
+
+  .main__weapons ul li:hover {
+    -webkit-transform: scale(1.2) rotate(360deg) translateZ(0);
+    background-color: map-get($colors, green)
+  }
+  
+  .main__weapons--sub {
+    @extend .main__weapons;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: map-get($colors, beige);
+  }
+
+  /* MAIN ARTIFACTS */
+  .main__artifacts ul li {
+    list-style-type: none;
+    margin: 5px;
+  }
+  
+  .main__artifacts--sub {
+    @extend .main__artifacts;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: map-get($colors, beige);
+  }
+  
+  /* MAIN CONTACT */
+  .main__contact--title {
+    text-align: center;
+  }
+  
+  .main__contact--img {
+    text-align: center;
+    }
+
+  .main__contactform {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: map-get($colors, beige);
+  }
+
+  .img__paimonfill {
+    text-align: center;
+  }
+
+/* HEADER */
+
+  .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(36, 87, 75, .8);
+    color: rgba(232, 220, 191, 1);
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: rgba(232, 220, 191, 1);
+    padding: .5rem;
+}
+
+.navbar-links li:hover {
+    background-color: rgba(75, 53, 34, 1);
+    border-radius: 40px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+  }

@@ -1,0 +1,23 @@
+* {
+    font-family: "genshin";
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-image: url(../../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    }
+  
+  main {
+    margin-top: 40px;
+    }
+
+    textarea {
+      max-width: 100%;
+      resize: vertical;
+    }
