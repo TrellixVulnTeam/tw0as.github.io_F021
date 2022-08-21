@@ -1,5 +1,8 @@
 import {anemoChars, cryoChars, dendroChars, electroChars, geoChars, hydroChars, pyroChars} from "./rawData.js";
 
+// most of the js is applied into Characters and Contact Us htmls to fulfill the course requirements. The rest is WiP since this is a real project in development that needs the approval of a team. 
+
+
 // Character section html creation
 
 function createAndAppendChars(chars, charToAppendTo) {
