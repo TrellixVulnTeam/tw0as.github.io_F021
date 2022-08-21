@@ -74,7 +74,9 @@ const pyroChars = [
     {name: "YOIMIYA", rarity: "5*", role: "DPS", img: "yoimiya.png", lore: "A talented pyrotechnician. The current owner of Naganohara Fireworks known as the 'Queen of the Summer Festival.' A girl filled with fiery passion. The uncompromising childish innocence and the obsession with craftsmanship intertwine in her to create a spectacular blaze."},
 ]
 
-// WEAPONS
+// WEAPONS WiP 
+
+/*
 const bow3 = [
     {id: "messenger", name: "Messenger", baseAtk: 40, maxAtk: 448, subStat: "Crit DMG", baseStat: 6.8, maxStat: 31.2, passive: "Aimed Shot hits on weak spots deal an additional 100/125/150/175/200% ATK DMG as CRIT DMG. Can only occur once every 10s.", img: "messenger.png"},
     {id: "raven-bow", name: "Raven Bow", baseAtk: 40, maxAtk: 448, subStat: "EM", baseStat: 20, maxStat: 94, passive: " 	Increases DMG against enemies affected by Hydro or Pyro by 12/15/18/21/24%.", img: "raven_bow.png"},
@@ -82,7 +84,7 @@ const bow3 = [
     {id: "sharpshooters-oath", name: "Sharpshooter's Oath", baseAtk: 39, maxAtk: 401, subStat: "Crit DMG", baseStat: 10.2, maxStat: 46.9, passive: "Increases DMG against weak spots by 24/30/36/42/48%", img: "sharpshooter's_oath.png"},
     {id: "slingshot", name: "Slingshot", baseAtk: 38, maxAtk: 354, subStat: "Crit Rate", baseStat: 6.8, maxStat: 31.2, passive: "If a Normal Attack or Aimed Shot hits a target within 0.3s of being fired, increases DMG by 36/42/48/54/60%. Otherwise, it decreases DMG by 10%.", img: "slingshot.png"},
 ]
-/*
+
 const bow4 = [
     {id: "", name: "", baseAtk: , maxAtk: , subStat: "", baseStat: , maxStat: , passive: "", img: ""},
     {id: "", name: "", baseAtk: , maxAtk: , subStat: "", baseStat: , maxStat: , passive: "", img: ""},

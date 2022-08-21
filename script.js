@@ -31,63 +31,48 @@ const pyro__char = document.getElementById("pyro__char");
 
 if (anemo__char) {
     createAndAppendChars(anemoChars, anemo__char);
+    fetch("https://api.genshin.dev/characters/") 
+    .then(response => response.json())
+    .then(datos => console.log(datos))
+    .catch(error => console.error(error))
 } else if (cryo__char) {
     createAndAppendChars(cryoChars, cryo__char);
+    fetch("https://api.genshin.dev/characters/") 
+    .then(response => response.json())
+    .then(datos => console.log(datos))
+    .catch(error => console.error(error))
 } else if (electro__char) {
     createAndAppendChars(electroChars, electro__char);
+    fetch("https://api.genshin.dev/characters/") 
+    .then(response => response.json())
+    .then(datos => console.log(datos))
+    .catch(error => console.error(error))
 }else if (geo__char) {
     createAndAppendChars(geoChars, geo__char);
+    fetch("https://api.genshin.dev/characters/") 
+    .then(response => response.json())
+    .then(datos => console.log(datos))
+    .catch(error => console.error(error))
 }else if (hydro__char) {
     createAndAppendChars(hydroChars, hydro__char);
+    fetch("https://api.genshin.dev/characters/") 
+    .then(response => response.json())
+    .then(datos => console.log(datos))
+    .catch(error => console.error(error))
 }else if (pyro__char) {
     createAndAppendChars(pyroChars, pyro__char);
+    fetch("https://api.genshin.dev/characters/") 
+    .then(response => response.json())
+    .then(datos => console.log(datos))
+    .catch(error => console.error(error))
 };
+
+// The Genshin API is currently under development so there's a lot it cannot do (like proper filtering)
+
 
 // PLACEHOLDER FOR WHEN DENDRO CHARS ARE INTRODUCED
 // const dendro__char = document.getElementById("dendro__char");
 
-// WEAPONS section html creation - To do this i should integrate multiple JS files on the project for the different elements in the database (chars , weapons , artifacts)
-
-/*
-function createAndAppendWeps(weps, wepToAppendTo) {
-    weps.forEach(wep => {
-        const content = document.createElement("div");
-        content.classList.add("main__elements--sub");
-        content.innerHTML = `
-        <article class="char__info">
-            <h3 class="char__name">${char.name}</h3>
-            <p>${char.rarity} ${char.role}</p>
-            <p>${char.lore}</p> 
-            <img src="../img/characters/${char.img}" alt="${char.name}">
-        </article>
-        `
-        
-        wepToAppendTo.appendChild(content);
-    });
-}
-
-const anemo__char = document.getElementById("anemo__char");
-const cryo__char = document.getElementById("cryo__char");
-const electro__char = document.getElementById("electro__char");
-const geo__char = document.getElementById("geo__char");
-const hydro__char = document.getElementById("hydro__char");
-const pyro__char = document.getElementById("pyro__char");
-
-if (anemo__char) {
-    createAndAppendChars(anemoChars, anemo__char);
-} else if (cryo__char) {
-    createAndAppendChars(cryoChars, cryo__char);
-} else if (electro__char) {
-    createAndAppendChars(electroChars, electro__char);
-}else if (geo__char) {
-    createAndAppendChars(geoChars, geo__char);
-}else if (hydro__char) {
-    createAndAppendChars(hydroChars, hydro__char);
-}else if (pyro__char) {
-    createAndAppendChars(pyroChars, pyro__char);
-};
-
-*/
 
 // CONTACT US SECTION
 // Currently the selector for Discord/Mail has been deleted and only remain a mail option
@@ -164,10 +149,7 @@ if (toTop) {
 /*
 
 // Found an useful API and i just load some random data before actually integrate it  
-fetch("https://api.genshin.dev/characters/") 
-.then(response => response.json())
-.then(datos => console.log(datos))
-.catch(error => console.error(error))
+
 
 */
 
